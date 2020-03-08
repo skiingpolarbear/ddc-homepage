@@ -19,8 +19,15 @@ body {
 .header-navigation .logo-section img {
     height: 7em;
     width: auto;
-    background: black;
+    padding-left: 45px;
+    padding-right: 10px;
     display: flex;
+    transform: skewX(20deg);
+}
+.header-navigation .logo-section {
+    transform: skewX(-20deg);
+    background: black;
+    margin-left: -30px;
 }
 
 /* NAVIGATION */
@@ -35,6 +42,10 @@ body {
     font-size: 1.5rem;
     font-weight: 300;
     color: black;
+}
+
+.header-navigation .nav-section .nav-item:hover {
+    color: rgb(117, 114, 114);
 }
 
 .header-navigation .login-section {
@@ -56,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
 }
 
 .hero-container .hero-content {
@@ -64,26 +75,69 @@ body {
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    j
+    text-align: center;
+        
+}
+
+/* TAG LINE */
+.hero-container .hero-tagline {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
     
 }
 
+.hero-tagline span{
+    display: block;
+    font-size: 2.5rem;
+
+}
+.hero-container .hero-tagline ::after {
+  content:'';
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  width:20%; height:100%;  
+  border-bottom:1px solid #fff;
+  margin-top: 18px;
+}
 
 
 /*BUTTONS*/
 .btn {
     text-decoration: none;
     font-weight: 300;
-    margin: 5px;
+    margin: 2px .8rem;
     font-size: 1.3rem;
     background: black;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-radius: 20px;
-    
-    
-    
+    width: 300px;        
 }
 
+.btn.btn-orange {
+    background-color: orange;
+}
+
+.btn.btn-orange:hover {
+    background-color: rgb(109, 74, 8);
+}
+
+.btn.btn-peach {
+    background: peachpuff;
+}
+
+.btn.btn-peach:hover {
+    background: rgb(250, 195, 146);
+}
+
+.btn.btn-pink {
+    background: pink;
+}
+
+.btn.btn-pink:hover {
+    background: rgb(245, 127, 146);
+}
 
 .hero-buttons   {
     display: flex;
