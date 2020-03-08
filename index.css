@@ -1,0 +1,60 @@
+body {
+    /*background-image: url("https://pictures.dealer.com/c/cibravehicles/1188/71cc1f170cedce3b8863dde8e46ad0d4x.jpg");*/
+    background-size: cover;
+}
+
+/*header navigation*/
+
+.header-navigation {
+    display: flex;
+    background:rgba(199, 197, 197, 0.8);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation .logo-section img {
+    height: 7em;
+    width: auto;
+    background: black;
+    display: flex;
+}
+
+/* NAVIGATION */
+.header-navigation .nav-section ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header-navigation .nav-section .nav-item{
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+}
+
+.header-navigation .login-section {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.header-navigation .login-section a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.google-reviews img {
+    height: 100px;
+}
